@@ -1,0 +1,20 @@
+[
+  {
+    "id": "veluxe-interiors",
+    "title": "Veluxe Interiors",
+    "description": "Modern interiors website, fast, responsive, SEO-ready.",
+    "url": "https://veluxeinteriors.com",
+    "type": "custom",
+    "image": "veluxe",
+    "tags": ["Custom Code", "Full-Stack", "Responsive Design"]
+  },
+  {
+    "id": "ms-properties",
+    "title": "MS Properties",
+    "description": "Real estate site with clear property sections and strong CTAs.",
+    "url": "https://mspropertiestpt.in",
+    "type": "wordpress",
+    "image": "msproperties",
+    "tags": ["WordPress", "CMS", "Real Estate"]
+  }
+]

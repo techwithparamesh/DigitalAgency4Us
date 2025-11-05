@@ -1,0 +1,18 @@
+[
+  {
+    "id": "hemath-kumar",
+    "name": "Hemath Kumar Reddy",
+    "company": "Veluxe Interiors",
+    "role": "Owner",
+    "quote": "DigitalAgency4Us delivered a clean, responsive site and handled everything end-to-end.",
+    "image": "hemath"
+  },
+  {
+    "id": "ramesh-goud",
+    "name": "Ramesh Goud",
+    "company": "MS Properties",
+    "role": "Owner",
+    "quote": "They set up our site, hosting, and maintenance—zero headaches.",
+    "image": "ramesh"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "wordpress",
+    "title": "WordPress Sites",
+    "description": "Fast, flexible CMS-powered websites with custom themes, plugins, and full content management.",
+    "icon": "wordpress",
+    "features": [
+      "Custom theme development",
+      "Plugin integration & customization",
+      "WooCommerce for e-commerce",
+      "Full CMS training included",
+      "Fast delivery timelines"
+    ]
+  },
+  {
+    "id": "custom-code",
+    "title": "Custom-Code Sites",
+    "description": "Fully custom websites built with HTML, CSS, JavaScript. Full-stack with backend & database support.",
+    "icon": "code",
+    "features": [
+      "Hand-coded HTML/CSS/JS",
+      "Full-stack development (React, Node, etc.)",
+      "Database design & integration",
+      "Private Git repository maintenance",
+      "Complete source code ownership"
+    ]
+  },
+  {
+    "id": "ux-ui",
+    "title": "UX/UI Design",
+    "description": "User-centered design that balances aesthetics with functionality and conversion goals.",
+    "icon": "palette",
+    "features": [
+      "Wireframing & prototyping",
+      "Responsive design systems",
+      "Brand identity integration",
+      "User flow optimization"
+    ]
+  },
+  {
+    "id": "seo",
+    "title": "SEO Optimization",
+    "description": "Search engine optimization to improve visibility and drive organic traffic to your site.",
+    "icon": "search",
+    "features": [
+      "On-page SEO optimization",
+      "Meta tags & structured data",
+      "Performance optimization",
+      "Search console setup"
+    ]
+  },
+  {
+    "id": "performance",
+    "title": "Performance Tuning",
+    "description": "Speed and performance optimization for better user experience and search rankings.",
+    "icon": "zap",
+    "features": [
+      "Image optimization & lazy loading",
+      "Code minification & bundling",
+      "CDN integration",
+      "Core Web Vitals optimization"
+    ]
+  },
+  {
+    "id": "support",
+    "title": "Ongoing Support",
+    "description": "Continuous support, updates, and maintenance to keep your site running smoothly.",
+    "icon": "headset",
+    "features": [
+      "Bug fixes & updates",
+      "Security monitoring",
+      "Content updates",
+      "Technical consultation"
+    ]
+  }
+]

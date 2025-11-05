@@ -1,0 +1,100 @@
+{
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": "$2,500",
+      "description": "Perfect for small businesses and startups",
+      "features": [
+        "Up to 5 pages",
+        "Responsive design",
+        "Basic SEO setup",
+        "Contact form integration",
+        "1 month support",
+        "WordPress OR Custom Code"
+      ],
+      "highlighted": false
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "price": "$5,500",
+      "description": "Ideal for growing businesses",
+      "features": [
+        "Up to 15 pages",
+        "Advanced responsive design",
+        "Full SEO optimization",
+        "CMS training (WordPress)",
+        "Custom integrations",
+        "3 months support",
+        "Git repository (Custom Code)",
+        "Analytics setup"
+      ],
+      "highlighted": true
+    },
+    {
+      "id": "scale",
+      "name": "Scale",
+      "price": "$12,000+",
+      "description": "For complex, full-stack applications",
+      "features": [
+        "Unlimited pages",
+        "Full-stack development",
+        "Custom backend & database",
+        "Advanced integrations",
+        "API development",
+        "6 months support",
+        "Private Git repository",
+        "Performance optimization",
+        "Security hardening"
+      ],
+      "highlighted": false
+    }
+  ],
+  "addon": {
+    "name": "Annual Hosting & Maintenance",
+    "price": "$1,200/year",
+    "description": "If we take care of hosting and maintaining databases, we charge additionally per year.",
+    "features": [
+      "Cloud hosting included",
+      "SSL certificate",
+      "Daily backups",
+      "Security monitoring",
+      "Database maintenance",
+      "Minor content updates",
+      "Performance monitoring",
+      "Priority support"
+    ]
+  },
+  "comparison": {
+    "headers": ["Feature", "WordPress Build", "Custom-Code Build", "Annual Add-On"],
+    "rows": [
+      ["CMS Setup", "✓", "—", "—"],
+      ["Git Repository", "—", "✓", "—"],
+      ["Source Code Ownership", "✓", "✓", "—"],
+      ["Hosting Included", "—", "—", "✓"],
+      ["SSL Certificate", "—", "—", "✓"],
+      ["Database Maintenance", "—", "—", "✓"],
+      ["Daily Backups", "—", "—", "✓"],
+      ["Minor Updates", "During support period", "During support period", "✓"]
+    ]
+  },
+  "faq": [
+    {
+      "question": "Do I own the code?",
+      "answer": "Yes! For both WordPress and custom-code projects, you own all the source code and content. We provide full transparency and handover documentation."
+    },
+    {
+      "question": "What's included in the Annual Add-On?",
+      "answer": "The Annual Hosting & Maintenance package includes cloud hosting, SSL certificates, daily backups, security monitoring, database maintenance, minor content updates, and priority support. Perfect if you want us to handle all technical operations."
+    },
+    {
+      "question": "Can I migrate my existing site?",
+      "answer": "Absolutely! We can migrate your existing WordPress or custom site to our platform, optimize it, and handle all hosting and maintenance going forward."
+    },
+    {
+      "question": "How long does a project take?",
+      "answer": "Starter packages typically take 2-3 weeks, Business packages 4-6 weeks, and Scale projects 8-12 weeks depending on complexity. We'll provide a detailed timeline during discovery."
+    }
+  ]
+}
