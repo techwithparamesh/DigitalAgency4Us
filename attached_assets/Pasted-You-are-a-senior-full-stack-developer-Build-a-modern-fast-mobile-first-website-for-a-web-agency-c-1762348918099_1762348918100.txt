@@ -1,0 +1,103 @@
+You are a senior full-stack developer. Build a modern, fast, mobile-first website for a web agency called **DigitalAgency4Us**. We build websites with **WordPress** OR **custom code (HTML/CSS/JS)**, and when we code custom sites we maintain the code in **Git repositories**. We also provide full-stack builds (frontend, backend, database) and can **host + maintain** for clients for an annual fee.
+
+### Tech + Project Setup
+- Use **React + Vite + Tailwind CSS** (no CSS frameworks that require CDN). 
+- Provide production-ready, accessible UI. 
+- Create a simple **/api/contact** endpoint using **Express** in the same Replit project that sends emails via **EmailJS** (or leave a clearly marked function stub to integrate SMTP later). Validate inputs server-side and client-side.
+- Organize code cleanly: `src/components`, `src/pages`, `src/data`, `src/lib`, and an `express` server with `server/index.js`.
+- Add a simple JSON-driven content layer (`src/data/*.json`) so text, services, pricing, portfolio, and testimonials can be edited without touching components.
+
+### Brand & Style
+- Brand name: **DigitalAgency4Us**
+- Tagline: *“We build, host & scale websites that grow your business.”*
+- Color palette: primary `#0EA5E9` (sky-500), dark `#0B1220`, light `#F1F5F9`.
+- Typography: Inter or system UI. Rounded cards, soft shadows, generous spacing.
+- Include a simple text logo and a favicon.
+
+### Pages & Sections
+1) **Home (/)**  
+   - Hero with headline, subtext, CTAs: “Get a Quote”, “View Work”.  
+   - Trust badges: “WordPress • Custom Code • Repositories • Hosting • Databases”.  
+   - Services preview (cards).  
+   - Portfolio preview (2 items).  
+   - Testimonials carousel.  
+   - Tech stack row (WordPress, HTML, CSS, JavaScript, Git, MySQL/Postgres).  
+   - CTA band.
+
+2) **Services (/services)**  
+   - Two primary tracks:  
+     a) **WordPress Sites** (themes, plugins, CMS, fast delivery)  
+     b) **Custom-Code Sites** (HTML/CSS/JS; full stack with backend + database; repo maintenance)  
+   - Also list: UX/UI, SEO basics, performance optimization, analytics, ongoing support.
+
+3) **Portfolio (/portfolio)**  
+   - Projects pulled from `src/data/portfolio.json`.  
+   - Include these NOW:  
+     - **Veluxe Interiors** – https://veluxeinteriors.com  
+       Short note: “Modern interiors website, fast, responsive, SEO-ready.”  
+     - **MS Properties** – https://mspropertiestpt.in  
+       Short note: “Real estate site with clear property sections and strong CTAs.”  
+   - Each card: title, description, link, badges (WordPress or Custom Code), and cover image placeholder.
+
+4) **Pricing (/pricing)**  
+   - Show one-time build packages (Starter, Business, Scale) with bullets for features.  
+   - Add an **Annual Hosting & Maintenance Add-On** card that clearly states:  
+     “If we take care of hosting and maintaining databases, we charge additionally per year.”  
+   - Include a comparison table that distinguishes:  
+     - WordPress Build (includes CMS setup)  
+     - Custom-Code Build (includes Git repo maintenance)  
+     - Optional Annual Add-On (hosting, SSL, backups, monitoring, minor updates, database maintenance).
+
+5) **About (/about)**  
+   - Our process: Discover → Design → Build → Launch → Maintain.  
+   - Emphasize repository maintenance, code quality, and transparent handover.  
+   - Small team vibe; quality > quantity.
+
+6) **Contact (/contact)**  
+   - Form fields: name, email, phone, company, project type (WordPress/Custom/Not sure), budget range, message.  
+   - Honeypot + rate limiting; validate; submit to Express endpoint; success/error states.  
+   - Also list email and WhatsApp placeholders.
+
+### Testimonials (must include these)
+- “Veluxe Interiors — owner is **Hemath Kumar Reddy**.” Short quote: *“DigitalAgency4Us delivered a clean, responsive site and handled everything end-to-end.”*
+- “MS Properties — owner is **Ramesh Goud**.” Short quote: *“They set up our site, hosting, and maintenance—zero headaches.”*
+Store in `src/data/testimonials.json` and render as a slider.
+
+### Copy Points (work into sections)
+- “We build complete systems: frontend, backend, and databases.”  
+- “Custom-code projects are maintained in private Git repositories.”  
+- “We also build on WordPress for speed and CMS flexibility.”  
+- “Annual hosting + database maintenance available as an add-on.”  
+- “Everything we ship is responsive, fast, and SEO-ready.”
+
+### SEO & Performance
+- Semantic HTML, meta tags, Open Graph, sitemap.xml, robots.txt.  
+- Lazy-load images, compress assets, and set proper `<link rel="preload">` where beneficial.
+
+### Header/Footer & UX
+- Sticky header with transparent-to-solid on scroll.  
+- Clear CTAs (“Get a Quote”, “Contact Us”).  
+- Footer: quick links, contact info, social placeholders, copyright.
+
+### Data Files (seed them)
+- `src/data/services.json` (service cards and details)  
+- `src/data/portfolio.json` (include the two sites above)  
+- `src/data/testimonials.json` (names + quotes above)  
+- `src/data/pricing.json` (packages + annual add-on line items)
+
+### Nice-to-Haves
+- Small FAQ accordion on Pricing page (ownership of code, what’s included in annual add-on, migration policy).  
+- Reusable Button, Card, Section, Container components.  
+- 404 page.  
+- Scroll animations with IntersectionObserver (no heavy libs).
+
+### Deliverables
+- Fully working Replit project with Vite + React front-end and Express-based contact API.  
+- Clear README with:  
+  - How to edit JSON content  
+  - How to configure EmailJS/SMTP  
+  - How to deploy on Replit  
+  - How to switch a portfolio item between WordPress vs Custom-Code badges  
+- Include example images/placeholders and alt text.
+
+Build all of this now.
