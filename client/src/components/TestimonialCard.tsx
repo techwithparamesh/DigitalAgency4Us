@@ -17,7 +17,6 @@ export default function TestimonialCard({ name, company, role, quote, image }: T
       <CardContent className="p-8">
         <div className="flex flex-col items-center text-center">
           <Avatar className="w-20 h-20 mb-4 border-2 border-primary/20">
-            <AvatarImage src={image} alt={name} />
             <AvatarFallback className="text-lg">{initials}</AvatarFallback>
           </Avatar>
           <p className="text-lg mb-6 italic text-foreground">&ldquo;{quote}&rdquo;</p>

@@ -20,39 +20,53 @@ export default function Header() {
     { label: "Home", path: "/" },
     { label: "Services", path: "/services" },
     { label: "Portfolio", path: "/portfolio" },
-    { label: "Pricing", path: "/pricing" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
   ];
 
+  // Only make header transparent on home page
+  const isHomePage = location === "/";
+  const shouldBeTransparent = isHomePage && !isScrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm border-b"
-          : "bg-transparent backdrop-blur-sm"
+        shouldBeTransparent
+          ? "bg-transparent backdrop-blur-sm"
+          : "bg-background/95 backdrop-blur-md shadow-sm border-b"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">
-              DigitalAgency<span className="text-foreground">4Us</span>
+            <div className={`text-2xl font-bold ${
+              shouldBeTransparent ? "text-white" : "text-primary"
+            }`}>
+              DigitalAgency<span className={shouldBeTransparent ? "text-cyan-300" : "text-foreground"}>4Us</span>
             </div>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <Button
-                  variant="ghost"
-                  className={location === item.path ? "bg-accent" : ""}
-                  data-testid={`link-nav-${item.label.toLowerCase()}`}
-                >
-                  {item.label}
-                </Button>
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = location === item.path;
+              return (
+                <Link key={item.path} href={item.path}>
+                  <Button
+                    variant="ghost"
+                    className={`${
+                      shouldBeTransparent 
+                        ? "text-white hover:text-white hover:bg-white/10" 
+                        : isActive 
+                          ? "bg-accent" 
+                          : ""
+                    }`}
+                    data-testid={`link-nav-${item.label.toLowerCase()}`}
+                  >
+                    {item.label}
+                  </Button>
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -62,7 +76,7 @@ export default function Header() {
           </div>
 
           <button
-            className="md:hidden p-2"
+            className={`md:hidden p-2 ${shouldBeTransparent ? "text-white" : ""}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
             aria-label="Toggle menu"

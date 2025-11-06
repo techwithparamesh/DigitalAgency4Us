@@ -109,7 +109,7 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Name *</Label>
+                        <Label htmlFor="name">Name <span className="text-destructive">*</span></Label>
                         <Input
                           id="name"
                           required
@@ -119,7 +119,7 @@ export default function Contact() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">Email *</Label>
+                        <Label htmlFor="email">Email <span className="text-destructive">*</span></Label>
                         <Input
                           id="email"
                           type="email"
@@ -133,10 +133,11 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone</Label>
+                        <Label htmlFor="phone">Phone <span className="text-destructive">*</span></Label>
                         <Input
                           id="phone"
                           type="tel"
+                          required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           data-testid="input-phone"
@@ -155,7 +156,7 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="projectType">Project Type *</Label>
+                        <Label htmlFor="projectType">Project Type <span className="text-destructive">*</span></Label>
                         <Select
                           required
                           value={formData.projectType}
@@ -167,31 +168,13 @@ export default function Contact() {
                           <SelectContent>
                             <SelectItem value="wordpress">WordPress Site</SelectItem>
                             <SelectItem value="custom">Custom Code Site</SelectItem>
-                            <SelectItem value="notsure">Not Sure</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="budget">Budget Range</Label>
-                        <Select
-                          value={formData.budget}
-                          onValueChange={(value) => setFormData({ ...formData, budget: value })}
-                        >
-                          <SelectTrigger id="budget" data-testid="select-budget">
-                            <SelectValue placeholder="Select range" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="under5k">Under $5,000</SelectItem>
-                            <SelectItem value="5k-10k">$5,000 - $10,000</SelectItem>
-                            <SelectItem value="10k-20k">$10,000 - $20,000</SelectItem>
-                            <SelectItem value="over20k">Over $20,000</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Project Description *</Label>
+                      <Label htmlFor="message">Project Description <span className="text-destructive">*</span></Label>
                       <Textarea
                         id="message"
                         required
@@ -227,11 +210,11 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:hello@digitalagency4us.com"
+                    href="mailto:digitalagency4us@gmail.com"
                     className="text-primary hover:underline"
                     data-testid="link-contact-email"
                   >
-                    hello@digitalagency4us.com
+                    digitalagency4us@gmail.com
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">
                     We respond within 24 hours
@@ -248,14 +231,14 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+919059576080"
                     className="text-primary hover:underline"
                     data-testid="link-contact-phone"
                   >
-                    +1 (234) 567-890
+                    +91-9059576080
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Mon-Fri, 9am-6pm EST
+                    Everyday, 7am-9pm IST
                   </p>
                 </CardContent>
               </Card>
@@ -269,13 +252,13 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/9059576080"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
                     data-testid="link-contact-whatsapp"
                   >
-                    Chat on WhatsApp
+                    +91-9059576080
                   </a>
                   <p className="text-sm text-muted-foreground mt-2">
                     Quick questions welcome

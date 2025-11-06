@@ -1,4 +1,10 @@
 import { Code, Database, GitBranch } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { SiWordpress } from "react-icons/si";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ServiceCard from "@/components/ServiceCard";
@@ -77,14 +83,14 @@ export default function Services() {
                     <span className="text-primary mt-1">✓</span>
                     <div>
                       <strong>Hand-Coded HTML/CSS/JavaScript</strong>
-                      <p className="text-sm text-muted-foreground">React, Vue, or vanilla - your choice</p>
+                      <p className="text-sm text-muted-foreground">React, TypeScript, or vanilla JavaScript</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✓</span>
                     <div>
                       <strong>Backend & Database Integration</strong>
-                      <p className="text-sm text-muted-foreground">Node.js, Python, MySQL, PostgreSQL</p>
+                      <p className="text-sm text-muted-foreground">Node.js, Express, Drizzle ORM, MySQL, PostgreSQL</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -102,7 +108,7 @@ export default function Services() {
 
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">Additional Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {servicesData.slice(2).map((service) => (
                 <ServiceCard key={service.id} {...service} icon={service.icon as any} />
               ))}
@@ -130,11 +136,41 @@ export default function Services() {
         </div>
       </section>
 
+      <div className="max-w-3xl mx-auto my-20">
+        <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="faq-1">
+            <AccordionTrigger>Do I own the code?</AccordionTrigger>
+            <AccordionContent>
+              Yes! For both WordPress and custom-code projects, you own all the source code and content. We provide full transparency and handover documentation.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="faq-2">
+            <AccordionTrigger>What's included in the Annual Add-On?</AccordionTrigger>
+            <AccordionContent>
+              The Annual Hosting & Maintenance package includes cloud hosting, SSL certificates, daily backups, security monitoring, database maintenance, minor content updates, and priority support. Perfect if you want us to handle all technical operations.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="faq-3">
+            <AccordionTrigger>Can I migrate my existing site?</AccordionTrigger>
+            <AccordionContent>
+              Absolutely! We can migrate your existing WordPress or custom site to our platform, optimize it, and handle all hosting and maintenance going forward.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="faq-4">
+            <AccordionTrigger>How long does a project take?</AccordionTrigger>
+            <AccordionContent>
+              We will complete the website in 2-4 weeks. For larger or more complex projects, we will provide a detailed timeline during discovery.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
+
       <CTABand
         title="Let's Discuss Your Project"
         description="Every project starts with a conversation"
         primaryCTA={{ text: "Get Started", href: "/contact" }}
-        secondaryCTA={{ text: "View Pricing", href: "/pricing" }}
+        secondaryCTA={{ text: "View Services", href: "/services" }}
       />
     </div>
   );

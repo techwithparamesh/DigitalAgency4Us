@@ -72,7 +72,7 @@ export default function Portfolio() {
 
           <div className="mt-16 text-center">
             <p className="text-muted-foreground mb-6">
-              These are just a few examples. We've helped dozens of businesses establish their online presence.
+              Here are a few examples from our portfolio. So far, we have delivered complete websites for MS Properties and Veluxe Interiors, and we are actively expanding our project list.
             </p>
             <p className="text-sm text-muted-foreground">
               All projects include responsive design, SEO optimization, and performance tuning.

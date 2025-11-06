@@ -13,8 +13,8 @@
     "title": "MS Properties",
     "description": "Real estate site with clear property sections and strong CTAs.",
     "url": "https://mspropertiestpt.in",
-    "type": "wordpress",
+    "type": "custom",
     "image": "msproperties",
-    "tags": ["WordPress", "CMS", "Real Estate"]
+    "tags": ["Custom Code", "Full-Stack", "Responsive Design", "Database"]
   }
 ]

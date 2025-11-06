@@ -15,7 +15,7 @@ export default function TrustBadges() {
       {badges.map((badge, index) => (
         <div
           key={index}
-          className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
           data-testid={`badge-trust-${badge.label.toLowerCase()}`}
         >
           <badge.icon className="w-5 h-5" />

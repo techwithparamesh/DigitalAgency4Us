@@ -47,14 +47,14 @@ export default function Home() {
       <section
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(11, 18, 32, 0.8), rgba(11, 18, 32, 0.6)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(to bottom, rgba(11, 18, 32, 0.92), rgba(11, 18, 32, 0.88)), url(${heroImage})`,
         }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
             We build, host & scale websites that grow your business
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto drop-shadow-md">
             Professional web development with WordPress or custom code. Full-stack builds with hosting and maintenance included.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
