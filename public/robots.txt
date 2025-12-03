@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://digitalagency4us.replit.app/sitemap.xml
+Sitemap: https://digitalagency4us.in/sitemap.xml

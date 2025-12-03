@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://digitalagency4us.replit.app/</loc>
+    <loc>https://digitalagency4us.in/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://digitalagency4us.replit.app/services</loc>
+    <loc>https://digitalagency4us.in/services</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://digitalagency4us.replit.app/portfolio</loc>
+    <loc>https://digitalagency4us.in/portfolio</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://digitalagency4us.replit.app/pricing</loc>
+    <loc>https://digitalagency4us.in/pricing</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://digitalagency4us.replit.app/about</loc>
+    <loc>https://digitalagency4us.in/about</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://digitalagency4us.replit.app/contact</loc>
+    <loc>https://digitalagency4us.in/contact</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
